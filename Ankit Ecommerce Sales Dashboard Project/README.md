@@ -3,7 +3,38 @@
 
 ## **Project Overview**
 
-This project demonstrates an interactive dashboard created on Power BI Transform, Load) pipeline that integrates weather and air quality data for a specified city over a defined time period. The data is extracted from external APIs, transformed (cleaned and processed), and loaded into a PostgreSQL database. The goal of this project is to provide a clean, well-structured dataset for further analysis or reporting.
+This project demonstrates an interactive dashboard created on Power BI to track the sales of an ecommerce shop.
+
+
+## **ETL Pipeline Breakdown**
+
+### **1. Data Extraction**
+- **Weather Data:** Extracted both **Details**, and **Orders** data into power BI. 
+- **Air Quality Data:** Collected using the AirVisual API, which provides air quality measurements such as PM2.5, PM10, and AQI (Air Quality Index).
+  
+### **2. Data Transformation**
+- **Created a new column test** with value of combining these 2 columns = Amount * Quantity
+- **Designed and implemented data models** by establishing relationships between Order and Details tables with 1 to 1 relation and joining by order id column which is common in both.
+- **Changed the data type** of order date column in orders table from text to date. 
+- Convert temperature units (Kelvin to Celsius).
+- Merge weather and air quality datasets based on date and location.
+- Create additional features such as "Feels like temperature" or AQI categories (Good, Moderate, Unhealthy, etc.).
+
+### **3. Data Loading**
+- Store the cleaned and transformed data into a PostgreSQL database.
+- Database schema includes separate tables for **weather**, **air quality**, and **merged data**.
+  
+--------------------------------------------------------------------------------------------------------
+**CHART NAME**                 |   **CHART TYPE**   |**Data in x-axis/Legend**|  **Data in y-axis/Value**
+-------------------------------|--------------------|-------------------------|--------------------------
+Profit by Month                |   Stack Column     |  Order Date (Month)     | Sum of Profit
+Sum of Profit by Sub-Ctegory   |   Stack Bar Graph  |  Sum of Profit          | Subcategory        
+Sum of Amount by State         |   Stack Bar Graph  |  Sum of Profit          | State
+Sum of Amount by CustomerName  |   Stacked Column   |  CustomerName           | Sum of Amount
+Sum of Quality by category     |   Donut Chart      |  Category               | Sum of Quantity
+Sum of Quantity by PaymentMode |   Donut Chart      |  PaymentMode            | Sum of Quantity
+
+
 
 ### **Prerequisites to run the Project**
 - **Power BI** 
