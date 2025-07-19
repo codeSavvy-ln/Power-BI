@@ -11,6 +11,8 @@ This project demonstrates an interactive dashboard created on Power BI to track 
 - **Gradient Color Backgroud** [Dark Gradient Background Color](https://github.com/codeSavvy-ln/Power-BI/blob/main/Ankit%20Ecommerce%20Sales%20Dashboard%20Project/dark-gradient%20background.jpg)
 
 
+## **IMPLEMENTATION OF DASHBORAD ON POWER BI**
+
 ### **1. Data Extraction**
 - **Extracted data** from both **Details**, and **Orders** table into power BI to visualize it after cleaning and transforming it.
 - 
