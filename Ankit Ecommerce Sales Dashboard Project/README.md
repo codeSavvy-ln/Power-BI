@@ -34,7 +34,7 @@ Sum of Amount by CustomerName  |   Stacked Column   |  CustomerName           | 
 Sum of Quality by category     |   Donut Chart      |  Category               | Sum of Quantity
 Sum of Quantity by PaymentMode |   Donut Chart      |  PaymentMode            | Sum of Quantity
 
-**Created these 4 cards:**
+**Implemented Few More Visualizations:**
 - Cards
   - Sum of Amount
   - Sum of Quantity
