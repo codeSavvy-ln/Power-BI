@@ -13,19 +13,21 @@ This project demonstrates an interactive dashboard created on Power BI to track 
 - **Air Quality Data:** Collected using the AirVisual API, which provides air quality measurements such as PM2.5, PM10, and AQI (Air Quality Index).
   
 ### **2. Data Transformation**
-- **Created a new column test** with value of combining these 2 columns = Amount * Quantity
+- **Created a new column AOV** with value of combining these 2 columns = Amount/Quantity. Data type should be whole numbers.
+    - This column will be used in **Sum of AOV(Avergae Order Value)** chart.
 - **Designed and implemented data models** by establishing relationships between Order and Details tables with 1 to 1 relation and joining by order id column which is common in both.
 - **Changed the data type** of order date column in orders table from text to date. 
 - Convert temperature units (Kelvin to Celsius).
+  
 - Merge weather and air quality datasets based on date and location.
 - Create additional features such as "Feels like temperature" or AQI categories (Good, Moderate, Unhealthy, etc.).
 
-### **3. Data Loading**
+### **3. Data Visualization**
 - Store the cleaned and transformed data into a PostgreSQL database.
 - Database schema includes separate tables for **weather**, **air quality**, and **merged data**.
   
 --------------------------------------------------------------------------------------------------------
-**CHART NAME**                 |   **CHART TYPE**   |**Data in x-axis/Legend**|  **Data in y-axis/Value**
+**CHART NAME**                 |  **CHART TYPE**    |**Data in x-axis/Legend**|  **Data in y-axis/Value**
 -------------------------------|--------------------|-------------------------|--------------------------
 Profit by Month                |   Stack Column     |  Order Date (Month)     | Sum of Profit
 Sum of Profit by Sub-Ctegory   |   Stack Bar Graph  |  Sum of Profit          | Subcategory        
@@ -35,6 +37,16 @@ Sum of Quality by category     |   Donut Chart      |  Category               | 
 Sum of Quantity by PaymentMode |   Donut Chart      |  PaymentMode            | Sum of Quantity
 
 
+**Created these 4 cards:**
+- Cards
+  - Sum of Amount
+  - Sum of Quantity
+  - Sum of AOV (Average Order Value)
+  - Sum of Profit
+
+- Filters
+    - Quaters: It will filter data for any of the 4 Quaters.
+    - State: It will filter data for each state.
 
 ### **Prerequisites to run the Project**
 - **Power BI** 
