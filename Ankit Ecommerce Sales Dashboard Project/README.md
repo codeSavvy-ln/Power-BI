@@ -22,7 +22,7 @@ This project demonstrates an interactive dashboard created on Power BI to track 
 - **Changed the data type** of order date column in orders table from text to date. 
 
 ### **3. Data Visualization**
-- All the types of charts and the column or value used inside them for visualization is mentioned below: 
+All the types of charts and the column or value used inside them for visualization is mentioned below: 
   
 --------------------------------------------------------------------------------------------------------
 **CHART NAME**                 | **CHART TYPE**     |**Data in x-axis/Legend**|  **Data in y-axis/Value**
