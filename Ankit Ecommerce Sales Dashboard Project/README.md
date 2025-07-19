@@ -11,11 +11,11 @@ This project demonstrates an interactive dashboard created on Power BI to track 
 - **Gradient Color Backgroud** [Dark Gradient Background Color](https://github.com/codeSavvy-ln/Power-BI/blob/main/Ankit%20Ecommerce%20Sales%20Dashboard%20Project/dark-gradient%20background.jpg)
 
 
-## **IMPLEMENTATION OF DASHBORAD ON POWER BI**
+
+## **Implementation of Dashboard on Power BI**
 
 ### **1. Data Extraction**
 - **Extracted data** from both **Details**, and **Orders** table into power BI to visualize it after cleaning and transforming it.
-- 
 
 ### **2. Data Transformation**
 - **Created a new column AOV** with value of combining these 2 columns = Amount/Quantity. Data type should be whole numbers.
@@ -25,8 +25,8 @@ This project demonstrates an interactive dashboard created on Power BI to track 
 
 ### **3. Data Visualization**
 All the types of charts and the column or value used inside them for visualization is mentioned below: 
+
   
---------------------------------------------------------------------------------------------------------
 **CHART NAME**                 | **CHART TYPE**     |**Data in x-axis/Legend**|  **Data in y-axis/Value**
 -------------------------------|--------------------|-------------------------|--------------------------
 Profit by Month                |   Stack Column     |  Order Date (Month)     | Sum of Profit
@@ -35,6 +35,7 @@ Sum of Amount by State         |   Stack Bar Graph  |  Sum of Profit          | 
 Sum of Amount by CustomerName  |   Stacked Column   |  CustomerName           | Sum of Amount
 Sum of Quality by category     |   Donut Chart      |  Category               | Sum of Quantity
 Sum of Quantity by PaymentMode |   Donut Chart      |  PaymentMode            | Sum of Quantity
+
 
 **Implemented Few More Visualizations:**
 - Cards
@@ -48,5 +49,5 @@ Sum of Quantity by PaymentMode |   Donut Chart      |  PaymentMode            | 
     - State: It will filter data for each state.
  
 
-### **How to run this Project**
+## **How to run this Project**
 Download and open this file into your Power BI tool - [Ankit Ecommerce Sales Dashboard](https://github.com/codeSavvy-ln/Power-BI/blob/main/Ankit%20Ecommerce%20Sales%20Dashboard%20Project/Ankit%20Ecommerce%20Sales%20Dshboard.pbix) 
